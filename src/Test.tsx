@@ -1,12 +1,20 @@
 import * as React from 'react';
 
-class Test extends React.Component {
+export interface Props {
+  name: string;
+}
+
+export interface State {
+  age: number;
+}
+
+class Test extends React.Component<Props, State> {
   render() {
-    return (
-      <div className="Test">
-        <div>Hello typescript</div>
-      </div>
-    );
+      return (
+          <div className="Test">
+              <div>{this.props.name}</div>
+          </div>
+      );
   }
 }
 
