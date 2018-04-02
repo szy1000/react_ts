@@ -10,11 +10,11 @@ export interface State {
 
 class Test extends React.Component<Props, State> {
   render() {
-      return (
-          <div className="Test">
-              <div>{this.props.name}</div>
-          </div>
-      );
+    return (
+      <div className="Test">
+        <div>{this.props.name}</div>
+      </div>
+    );
   }
 }
 
